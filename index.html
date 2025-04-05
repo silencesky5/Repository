@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang='zh-TW'>
+<head>
+  <meta charset='UTF-8'>
+  <title>技能特效預覽</title>
+  <style>
+    body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; }
+    h1 { font-size: 28px; margin-bottom: 20px; }
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 20px;
+    }
+    .skill-block {
+      background: #222;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .skill-block:hover {
+      transform: scale(1.8);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+      z-index: 10;
+    }
+    .skill-title { font-size: 14px; margin-bottom: 8px; color: #ccc; }
+    .anim-container { width: 64px; height: 64px; margin: 0 auto; position: relative; }
+    .anim-container img { position: absolute; top: 0; left: 0; width: 64px; height: 64px; display: none; }
+    .anim-container img.active { display: block; }
+  </style>
+</head>
+<body>
+  <h1>技能特效預覽</h1>
+  <div class='skill-list'>
+    <div class='skill-block'>
+      <div class='skill-title'>技能 ID：10844</div>
+      <div class='anim-container' id='anim-10844'>
+        <img src='converted_effects/10844/10844-0-0.png' class='active' data-index='0'>
+        <img src='converted_effects/10844/10844-0-1.png' class='' data-index='1'>
+        <img src='converted_effects/10844/10844-0-2.png' class='' data-index='2'>
+        <img src='converted_effects/10844/10844-0-3.png' class='' data-index='3'>
+        <img src='converted_effects/10844/10844-0-4.png' class='' data-index='4'>
+        <img src='converted_effects/10844/10844-0-5.png' class='' data-index='5'>
+        <img src='converted_effects/10844/10844-0-6.png' class='' data-index='6'>
+        <img src='converted_effects/10844/10844-0-7.png' class='' data-index='7'>
+        <img src='converted_effects/10844/10844-0-8.png' class='' data-index='8'>
+        <img src='converted_effects/10844/10844-0-9.png' class='' data-index='9'>
+        <img src='converted_effects/10844/10844-0-10.png' class='' data-index='10'>
+        <img src='converted_effects/10844/10844-0-11.png' class='' data-index='11'>
+      </div>
+    </div>
+    <div class='skill-block'>
+      <div class='skill-title'>技能 ID：10845</div>
+      <div class='anim-container' id='anim-10845'>
+        <img src='converted_effects/10845/10845-0-0.png' class='active' data-index='0'>
+        <img src='converted_effects/10845/10845-0-1.png' class='' data-index='1'>
+        <img src='converted_effects/10845/10845-0-2.png' class='' data-index='2'>
+        <img src='converted_effects/10845/10845-0-3.png' class='' data-index='3'>
+        <img src='converted_effects/10845/10845-0-4.png' class='' data-index='4'>
+        <img src='converted_effects/10845/10845-0-5.png' class='' data-index='5'>
+        <img src='converted_effects/10845/10845-0-6.png' class='' data-index='6'>
+        <img src='converted_effects/10845/10845-0-7.png' class='' data-index='7'>
+        <img src='converted_effects/10845/10845-0-8.png' class='' data-index='8'>
+        <img src='converted_effects/10845/10845-0-9.png' class='' data-index='9'>
+        <img src='converted_effects/10845/10845-0-10.png' class='' data-index='10'>
+        <img src='converted_effects/10845/10845-0-11.png' class='' data-index='11'>
+        <img src='converted_effects/10845/10845-0-12.png' class='' data-index='12'>
+        <img src='converted_effects/10845/10845-0-13.png' class='' data-index='13'>
+        <img src='converted_effects/10845/10845-0-14.png' class='' data-index='14'>
+        <img src='converted_effects/10845/10845-0-15.png' class='' data-index='15'>
+      </div>
+    </div>
+    <div class='skill-block'>
+      <div class='skill-title'>技能 ID：10846</div>
+      <div class='anim-container' id='anim-10846'>
+        <img src='converted_effects/10846/10846-0-0.png' class='active' data-index='0'>
+        <img src='converted_effects/10846/10846-0-1.png' class='' data-index='1'>
+        <img src='converted_effects/10846/10846-0-2.png' class='' data-index='2'>
+        <img src='converted_effects/10846/10846-0-3.png' class='' data-index='3'>
+        <img src='converted_effects/10846/10846-0-4.png' class='' data-index='4'>
+        <img src='converted_effects/10846/10846-0-5.png' class='' data-index='5'>
+        <img src='converted_effects/10846/10846-0-6.png' class='' data-index='6'>
+        <img src='converted_effects/10846/10846-0-7.png' class='' data-index='7'>
+        <img src='converted_effects/10846/10846-0-8.png' class='' data-index='8'>
+        <img src='converted_effects/10846/10846-0-9.png' class='' data-index='9'>
+        <img src='converted_effects/10846/10846-0-10.png' class='' data-index='10'>
+        <img src='converted_effects/10846/10846-0-11.png' class='' data-index='11'>
+        <img src='converted_effects/10846/10846-0-12.png' class='' data-index='12'>
+        <img src='converted_effects/10846/10846-0-13.png' class='' data-index='13'>
+        <img src='converted_effects/10846/10846-0-14.png' class='' data-index='14'>
+        <img src='converted_effects/10846/10846-0-15.png' class='' data-index='15'>
+      </div>
+    </div>
+    <div class='skill-block'>
+      <div class='skill-title'>技能 ID：10847</div>
+      <div class='anim-container' id='anim-10847'>
+        <img src='converted_effects/10847/10847-0-0.png' class='active' data-index='0'>
+        <img src='converted_effects/10847/10847-0-1.png' class='' data-index='1'>
+        <img src='converted_effects/10847/10847-0-2.png' class='' data-index='2'>
+        <img src='converted_effects/10847/10847-0-3.png' class='' data-index='3'>
+        <img src='converted_effects/10847/10847-0-4.png' class='' data-index='4'>
+        <img src='converted_effects/10847/10847-0-5.png' class='' data-index='5'>
+        <img src='converted_effects/10847/10847-0-6.png' class='' data-index='6'>
+        <img src='converted_effects/10847/10847-0-7.png' class='' data-index='7'>
+        <img src='converted_effects/10847/10847-0-8.png' class='' data-index='8'>
+        <img src='converted_effects/10847/10847-0-9.png' class='' data-index='9'>
+        <img src='converted_effects/10847/10847-0-10.png' class='' data-index='10'>
+        <img src='converted_effects/10847/10847-0-11.png' class='' data-index='11'>
+        <img src='converted_effects/10847/10847-0-12.png' class='' data-index='12'>
+        <img src='converted_effects/10847/10847-0-13.png' class='' data-index='13'>
+        <img src='converted_effects/10847/10847-0-14.png' class='' data-index='14'>
+      </div>
+    </div>
+    <div class='skill-block'>
+      <div class='skill-title'>技能 ID：10848</div>
+      <div class='anim-container' id='anim-10848'>
+        <img src='converted_effects/10848/10848-0-0.png' class='active' data-index='0'>
+        <img src='converted_effects/10848/10848-0-1.png' class='' data-index='1'>
+        <img src='converted_effects/10848/10848-0-2.png' class='' data-index='2'>
+        <img src='converted_effects/10848/10848-0-3.png' class='' data-index='3'>
+        <img src='converted_effects/10848/10848-0-4.png' class='' data-index='4'>
+        <img src='converted_effects/10848/10848-0-5.png' class='' data-index='5'>
+        <img src='converted_effects/10848/10848-0-6.png' class='' data-index='6'>
+        <img src='converted_effects/10848/10848-0-7.png' class='' data-index='7'>
+        <img src='converted_effects/10848/10848-0-8.png' class='' data-index='8'>
+        <img src='converted_effects/10848/10848-0-9.png' class='' data-index='9'>
+        <img src='converted_effects/10848/10848-0-10.png' class='' data-index='10'>
+        <img src='converted_effects/10848/10848-0-11.png' class='' data-index='11'>
+        <img src='converted_effects/10848/10848-0-12.png' class='' data-index='12'>
+        <img src='converted_effects/10848/10848-0-13.png' class='' data-index='13'>
+      </div>
+    </div>
+    <div class='skill-block'>
+      <div class='skill-title'>技能 ID：10849</div>
+      <div class='anim-container' id='anim-10849'>
+        <img src='converted_effects/10849/10849-0-0.png' class='active' data-index='0'>
+        <img src='converted_effects/10849/10849-0-1.png' class='' data-index='1'>
+        <img src='converted_effects/10849/10849-0-2.png' class='' data-index='2'>
+        <img src='converted_effects/10849/10849-0-3.png' class='' data-index='3'>
+        <img src='converted_effects/10849/10849-0-4.png' class='' data-index='4'>
+        <img src='converted_effects/10849/10849-0-5.png' class='' data-index='5'>
+        <img src='converted_effects/10849/10849-0-6.png' class='' data-index='6'>
+        <img src='converted_effects/10849/10849-0-7.png' class='' data-index='7'>
+        <img src='converted_effects/10849/10849-0-8.png' class='' data-index='8'>
+        <img src='converted_effects/10849/10849-0-9.png' class='' data-index='9'>
+        <img src='converted_effects/10849/10849-0-10.png' class='' data-index='10'>
+        <img src='converted_effects/10849/10849-0-11.png' class='' data-index='11'>
+        <img src='converted_effects/10849/10849-0-12.png' class='' data-index='12'>
+        <img src='converted_effects/10849/10849-0-13.png' class='' data-index='13'>
+        <img src='converted_effects/10849/10849-0-14.png' class='' data-index='14'>
+        <img src='converted_effects/10849/10849-0-15.png' class='' data-index='15'>
+        <img src='converted_effects/10849/10849-0-16.png' class='' data-index='16'>
+        <img src='converted_effects/10849/10849-0-17.png' class='' data-index='17'>
+      </div>
+    </div>
+    <div class='skill-block'>
+      <div class='skill-title'>技能 ID：10850</div>
+      <div class='anim-container' id='anim-10850'>
+        <img src='converted_effects/10850/10850-0-0.png' class='active' data-index='0'>
+        <img src='converted_effects/10850/10850-0-1.png' class='' data-index='1'>
+        <img src='converted_effects/10850/10850-0-2.png' class='' data-index='2'>
+        <img src='converted_effects/10850/10850-0-3.png' class='' data-index='3'>
+        <img src='converted_effects/10850/10850-0-4.png' class='' data-index='4'>
+        <img src='converted_effects/10850/10850-0-5.png' class='' data-index='5'>
+        <img src='converted_effects/10850/10850-0-6.png' class='' data-index='6'>
+        <img src='converted_effects/10850/10850-0-7.png' class='' data-index='7'>
+        <img src='converted_effects/10850/10850-0-8.png' class='' data-index='8'>
+        <img src='converted_effects/10850/10850-0-9.png' class='' data-index='9'>
+        <img src='converted_effects/10850/10850-0-10.png' class='' data-index='10'>
+      </div>
+    </div>
+  </div>
+  <script>
+    const animations = document.querySelectorAll('.anim-container');
+    animations.forEach(container => {
+      const frames = container.querySelectorAll('img');
+      let index = 0;
+      setInterval(() => {
+        frames.forEach(f => f.classList.remove('active'));
+        frames[index].classList.add('active');
+        index = (index + 1) % frames.length;
+      }, 100);
+    });
+  </script>
+</body>
+</html>
